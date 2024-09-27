@@ -69,7 +69,7 @@ Place the downloaded CSV file in the data/ folder.
 Run the notebook: Open the Jupyter notebook and run the cells to reproduce the results:
 
 bash
-Copy code
+
 jupyter notebook credit_card_fraud.ipynb
 Exploratory Data Analysis (EDA)
 We conducted EDA to understand the data and highlight important insights. The data was found to be highly imbalanced, with only 0.172% fraudulent transactions. A correlation matrix was used to explore relationships between features.
@@ -95,7 +95,6 @@ SVM: Effective but computationally expensive.
 Feature Importance
 We also plotted feature importance to identify which variables contributed most to predicting fraudulent transactions. The Amount, V17, and V12 features were found to be among the most important.
 
-python
 # Feature Importance Plot Example
 tmp = pd.DataFrame({'Feature': X_train.columns, 'Feature importance': xgb.feature_importances_})
 tmp = tmp.sort_values(by='Feature importance', ascending=False)

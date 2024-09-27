@@ -1,5 +1,7 @@
 Credit Card Fraud Detection
+
 Overview
+
 This project focuses on detecting fraudulent transactions in credit card data using various machine learning models. The dataset used is the Credit Card Fraud Detection dataset from Kaggle.
 
 Problem Statement: Fraudulent transactions in credit card data are rare events. Therefore, detecting them requires techniques that can handle imbalanced datasets and minimize false positives and false negatives.
@@ -14,12 +16,19 @@ Class: The target variable (1 for fraud, 0 for non-fraud).
 Project Structure
 r
 Copy code
+
 ├── README.md                 <- The project README file
+
 ├── credit_card_fraud.ipynb    <- Jupyter notebook for the project
-├── data/                     
+
+├── data/                    
+
 │   └── creditcard.csv         <- The dataset
+
 └── models/                   
+
     └── trained_models.pkl     <- Trained models stored for later use
+    
 Technologies Used
 Python: Main programming language.
 Pandas: For data manipulation and analysis.
